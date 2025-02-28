@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Patients List</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Gestion Consultation</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="@{/}">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@{/patients}">Patient</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@{/consultation}">Consultation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="@{/contact}">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container mt-5">
+    <h2 class="mb-4">Patients List</h2>
+    <a th:href="@{/patients/new}" class="btn btn-primary mb-3">AddNew Patient</a>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="patient : ${patients}">
+            <td th:text="${patient.idpatient}"></td>
+            <td th:text="${patient.prenom}"></td>
+            <td th:text="${patient.nom}"></td>
+            <td th:text="${patient.email}"></td>
+            <td th:text="${patient.tel}"></td>
+            <td>
+                <a th:href="@{/patients/edit/{id}(id=${patient.idpatient})}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+                <a th:href="@{/patients/delete/{id}(id=${patient.idpatient})}" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
