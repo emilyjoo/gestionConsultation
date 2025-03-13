@@ -4,6 +4,7 @@ import ma.enset.gestionconsultation.entity.Consultation;
 import ma.enset.gestionconsultation.entity.Patient;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface CabinetService {
     void addPatient(Patient patient);
@@ -13,8 +14,9 @@ public interface CabinetService {
     void deletePatient(Patient patient);
     void deletePatientById(Long id);
 
-    void AddConsultation(Consultation consultation);
+    void addConsultation(Consultation consultation);
     List<Consultation> getAllConsultations();
-    void updateConsulation(Consultation patient);
-    void deleteConsultation(Consultation patient);
+    Consultation getConsultationsById(Long id);
+    void updateConsultation(Consultation patient);
+    void deleteConsultationById(Long id);
 }

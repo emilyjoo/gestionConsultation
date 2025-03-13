@@ -11,10 +11,11 @@ import java.sql.Date;
 @Entity
 public class Consultation {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idconsultation;
+    private long idconsultation;
     private Date date;
     private String discription;
     @ManyToOne
+    @JoinColumn(name = "idpatient")
     private Patient patient;
 
     public Patient getPatient() {
@@ -25,11 +26,11 @@ public class Consultation {
         this.patient = patient;
     }
 
-    public int getIdconsultation() {
+    public long getIdconsultation() {
         return idconsultation;
     }
 
-    public void setIdconsultation(int idconsultation) {
+    public void setIdconsultation(long idconsultation) {
         this.idconsultation = idconsultation;
     }
 

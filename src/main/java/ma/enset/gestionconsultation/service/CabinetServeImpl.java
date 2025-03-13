@@ -7,6 +7,8 @@ import ma.enset.gestionconsultation.repository.PatientRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class CabinetServeImpl implements CabinetService{
     private PatientRepository patientRepository;
@@ -25,7 +27,6 @@ public class CabinetServeImpl implements CabinetService{
 
     @Override
     public List<Patient> getAllPatinets() {
-
         return patientRepository.findAll();
     }
 
@@ -52,7 +53,7 @@ public class CabinetServeImpl implements CabinetService{
     }
 
     @Override
-    public void AddConsultation(Consultation consultation) {
+    public void addConsultation(Consultation consultation) {
         consultationRepository.save(consultation);
 
     }
@@ -60,19 +61,23 @@ public class CabinetServeImpl implements CabinetService{
 
     @Override
     public List<Consultation> getAllConsultations() {
-
         return consultationRepository.findAll();
     }
 
     @Override
-    public void updateConsulation(Consultation patient) {
-        consultationRepository.save(patient);
-
+    public Consultation getConsultationsById(Long id) {
+        return consultationRepository.findById(id).orElse(null);
     }
 
     @Override
-    public void deleteConsultation(Consultation patient) {
-        consultationRepository.delete(patient);
-
+    public void updateConsultation(Consultation consultation) {
+        consultationRepository.save(consultation);
     }
+
+
+    @Override
+    public void deleteConsultationById(Long id) {
+        consultationRepository.deleteById(id);
+    }
+
 }

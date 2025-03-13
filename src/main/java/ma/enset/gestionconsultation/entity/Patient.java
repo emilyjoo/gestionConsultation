@@ -20,7 +20,7 @@ public class Patient {
     private String email;
     @Column(length = 20)
     private String tel;
-    @OneToMany (mappedBy = "patient")
+    @OneToMany (mappedBy = "patient", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Consultation> consultations;
 
     public long getIdpatient() {
