@@ -43,7 +43,6 @@ This is a Spring Boot application for managing patient consultations.
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/5bbbdc76-0203-4adf-a1b3-1cfbc807187d)
-![image](https://github.com/user-attachments/assets/7650de1b-3c0a-41a6-a5f6-15e4307b2c71)
 
 
 
