@@ -1,20 +1,24 @@
-# Gestion Consultation
+# Gestion Consultation Application
 
-This is a Spring Boot application for managing patient consultations.
+The **Gestion Consultation Application** is a web-based platform designed to manage patient records and medical consultations efficiently. Built with **Spring Boot** for the backend and **Thymeleaf** for the frontend, this application provides a user-friendly interface for healthcare professionals to:
 
-## Features
+- **Manage Patients**: Add, update, delete, and view patient details such as name, email, phone number, and more.
+- **Schedule Consultations**: Create and manage medical consultations, including dates, descriptions, and associated patients.
+- **Organize Data**: Easily navigate between patients and consultations with a responsive and intuitive design.
+- **Contact Support**: A dedicated contact page allows users to reach out for assistance or inquiries.
 
-- Add new patients
-- Edit patient details
-- Delete patients
-- View list of patients
+## Key Features
+- **CRUD Operations**: Full support for creating, reading, updating, and deleting patients and consultations.
+- **Responsive Design**: Built with **Bootstrap** for a seamless experience across devices.
+- **Dynamic Forms**: Add new patients and consultations with ease using interactive forms.
+- **Footer and Navigation**: A fixed footer and centered navigation bar enhance usability.
 
 ## Technologies Used
+- **Backend**: Spring Boot, Spring Data JPA, Hibernate
+- **Frontend**: Thymeleaf, Bootstrap, HTML, CSS
+- **Database**: MySQL
 
-- Java
-- Spring Boot
-- Thymeleaf
-- Maven
+This application is ideal for small clinics or healthcare providers looking to streamline their patient and consultation management processes.
 
 ## Setup
 
