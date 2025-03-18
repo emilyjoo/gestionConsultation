@@ -43,8 +43,19 @@ This is a Spring Boot application for managing patient consultations.
 ## Screenshots
 
 ## ACCUEIL
-
 ![image](https://github.com/user-attachments/assets/066f90fe-c705-4c7f-97ef-de9576f2fda3)
+## Add New Patient
+![image](https://github.com/user-attachments/assets/a621d67c-c9a7-46ae-82f9-0b7c05a07498)
+## List Patient
+![image](https://github.com/user-attachments/assets/dde338a5-4ea4-4628-9d04-79ad75103c16)
+## Add New Consultation
+![image](https://github.com/user-attachments/assets/87b15e3d-9c45-474f-b8c9-3a418243e974)
+## List Consultation
+![image](https://github.com/user-attachments/assets/5cccd2db-5f26-43b3-82f6-9e79d549f72d)
+
+
+
+
 
 
 
