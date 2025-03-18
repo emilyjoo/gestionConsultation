@@ -18,8 +18,6 @@ The **Gestion Consultation Application** is a web-based platform designed to man
 - **Frontend**: Thymeleaf, Bootstrap, HTML, CSS
 - **Database**: MySQL
 
-This application is ideal for small clinics or healthcare providers looking to streamline their patient and consultation management processes.
-
 ## Setup
 
 1. Clone the repository:
@@ -60,13 +58,4 @@ This application is ideal for small clinics or healthcare providers looking to s
 
 
 
-
-
-
-
-
-
-
-## License
-
-This project is licensed under the MIT License.
+This application is ideal for small clinics or healthcare providers looking to streamline their patient and consultation management processes.
