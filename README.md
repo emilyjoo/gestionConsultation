@@ -14,7 +14,7 @@ The **Gestion Consultation Application** is a web-based platform designed to man
 - **Footer and Navigation**: A fixed footer and centered navigation bar enhance usability.
 
 ## Technologies Used
-- **Backend**: Spring Boot, Spring Data JPA, Hibernate
+- **Backend**: Spring Boot, Spring Data JPA, Spring Web, Lombok, Hibernate
 - **Frontend**: Thymeleaf, Bootstrap, HTML, CSS
 - **Database**: MySQL
 
